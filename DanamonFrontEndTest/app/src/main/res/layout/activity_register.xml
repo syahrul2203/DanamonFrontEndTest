@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegisterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_title"
+        android:textSize="@dimen/extra_large_text_size"/>
+
+    <EditText
+        android:layout_marginHorizontal="@dimen/large_spacing"
+        android:layout_marginTop="@dimen/xxlarge_spacing"
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:hint="@string/hint_username"
+        android:inputType="text"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:layout_marginHorizontal="@dimen/large_spacing"
+        android:layout_marginTop="@dimen/large_spacing"
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:layout_marginHorizontal="@dimen/large_spacing"
+        android:layout_marginTop="@dimen/large_spacing"
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:importantForAutofill="no"/>
+
+    <CheckBox
+        android:layout_marginHorizontal="@dimen/large_spacing"
+        android:layout_marginTop="@dimen/normal_spacing"
+        android:id="@+id/checkBoxRegisterAsAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_register_as_an_admin"
+        android:textSize="18sp"
+        android:padding="7dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginHorizontal="@dimen/large_spacing"
+        android:textAllCaps="true"
+        android:id="@+id/btn_sign_up"
+        android:layout_marginTop="@dimen/large_spacing"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:textSize="@dimen/large_text_size"
+        android:text="@string/sign_up_button_text"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginHorizontal="@dimen/large_spacing"
+        android:textAllCaps="true"
+        android:id="@+id/btn_back_to_login_page"
+        android:layout_marginTop="@dimen/normal_spacing"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:textSize="@dimen/large_text_size"
+        android:text="@string/back_to_login_button_text"/>
+
+</LinearLayout>

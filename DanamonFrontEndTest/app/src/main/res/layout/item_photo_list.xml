@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/normal_spacing"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="@dimen/large_spacing"
+    app:cardElevation="@dimen/normal_spacing">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/thumbnail_image"
+            android:layout_width="@dimen/item_photo_thumbnail_size"
+            android:layout_height="@dimen/item_photo_thumbnail_size"
+            android:layout_margin="@dimen/normal_spacing"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="@dimen/normal_spacing"
+            android:layout_marginStart="@dimen/normal_spacing"
+            app:layout_constraintStart_toEndOf="@+id/thumbnail_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_marginHorizontal="@dimen/large_spacing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/item_admin_title_text_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_id"
+                    android:textSize="@dimen/small_text_size"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/equals"
+                    android:textSize="@dimen/medium_text_size"/>
+
+                <TextView
+                    android:id="@+id/tv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="2"
+                    android:layout_marginStart="@dimen/large_spacing"
+                    android:textSize="@dimen/small_text_size"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/normal_spacing"
+                android:layout_marginHorizontal="@dimen/large_spacing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/item_admin_title_text_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/album_id_title"
+                    android:textSize="@dimen/small_text_size"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/equals"
+                    android:textSize="@dimen/medium_text_size"/>
+
+                <TextView
+                    android:id="@+id/tv_album_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="1"
+                    android:layout_marginStart="@dimen/large_spacing"
+                    android:textSize="@dimen/small_text_size"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/normal_spacing"
+                android:layout_marginHorizontal="@dimen/large_spacing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/item_admin_title_text_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/photo_title"
+                    android:textSize="@dimen/small_text_size"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/equals"
+                    android:textSize="@dimen/medium_text_size"/>
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="accusamus beatae ad facilis cum similique qui sunt"
+                    android:layout_marginStart="@dimen/large_spacing"
+                    android:textSize="@dimen/small_text_size"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,3 +1,33 @@
 <resources>
     <string name="app_name">Danamon Front End Test</string>
+
+    <string name="welcome_title">Hi There !</string>
+    <string name="register_title">Register New User</string>
+    <string name="profile_title">Your Profile</string>
+
+    <string name="hint_username">Type Username</string>
+    <string name="hint_email">Type Email</string>
+    <string name="hint_password">Type Password</string>
+    <string name="hint_register_as_an_admin">Register as an admin</string>
+    <string name="hint_set_user_as_an_admin">Set as an admin</string>
+    <string name="hint_password_to_delete">Type your password to delete</string>
+
+    <string name="sign_in_button_text">Sign In</string>
+    <string name="sign_up_button_text">Sign Up</string>
+    <string name="back_to_login_button_text">Back to login page</string>
+    <string name="sign_out_button_text">Sign Out</string>
+    <string name="update_user_button_text">Update User</string>
+    <string name="delete_user_button_text">Delete User</string>
+    <string name="cancel_button_text">Cancel</string>
+
+    <string name="title_id">ID</string>
+    <string name="title_username">Username</string>
+    <string name="title_email">Email</string>
+    <string name="title_role">Role</string>
+    <string name="equals">:</string>
+    <string name="edit_user">Edit User</string>
+
+    <string name="photo_title">Title</string>
+    <string name="album_id_title">Album ID</string>
+
 </resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".fragment.ProfileFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_title"
+        android:textSize="@dimen/extra_large_text_size"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/large_spacing"
+        android:layout_marginHorizontal="@dimen/xlarge_spacing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/profile_title_text_width"
+            android:layout_height="wrap_content"
+            android:text="@string/title_username"
+            android:textSize="@dimen/large_text_size"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/equals"
+            android:textSize="@dimen/large_text_size"/>
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Syahrul Gunawan"
+            android:layout_marginStart="@dimen/large_spacing"
+            android:textSize="@dimen/large_text_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/normal_spacing"
+        android:layout_marginHorizontal="@dimen/xlarge_spacing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/profile_title_text_width"
+            android:layout_height="wrap_content"
+            android:text="@string/title_email"
+            android:textSize="@dimen/large_text_size"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/equals"
+            android:textSize="@dimen/large_text_size"/>
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="syahrul22gunawan@gmail.com"
+            android:layout_marginStart="@dimen/large_spacing"
+            android:textSize="@dimen/large_text_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/normal_spacing"
+        android:layout_marginHorizontal="@dimen/xlarge_spacing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/profile_title_text_width"
+            android:layout_height="wrap_content"
+            android:text="@string/title_role"
+            android:textSize="@dimen/large_text_size"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/equals"
+            android:textSize="@dimen/large_text_size"/>
+
+        <TextView
+            android:id="@+id/tv_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Admin"
+            android:layout_marginStart="@dimen/large_spacing"
+            android:textSize="@dimen/large_text_size"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginHorizontal="@dimen/large_spacing"
+        android:textAllCaps="true"
+        android:id="@+id/btn_sign_out"
+        android:layout_marginTop="@dimen/large_spacing"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:textSize="@dimen/large_text_size"
+        android:text="@string/sign_out_button_text"/>
+
+</LinearLayout>

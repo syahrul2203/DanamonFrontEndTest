@@ -1,22 +1,31 @@
 package com.syahrul.danamonfrontendtest.activity
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.syahrul.danamonfrontendtest.R
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import com.syahrul.danamonfrontendtest.viewmodel.ViewModelFactory
+import com.syahrul.danamonfrontendtest.utils.appComponent
+import javax.inject.Inject
 
 abstract class BaseActivity: AppCompatActivity() {
 
+    @Inject
+    lateinit var viewModelFactory: ViewModelFactory
+
+    inline fun <reified VM : ViewModel> getViewModel()
+            = ViewModelProvider(this, viewModelFactory).get(VM::class.java)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+
+        appComponent.inject(this)
+
+    }
+
+    fun showToastMessage(message: String){
+        Toast.makeText(this@BaseActivity, message, Toast.LENGTH_SHORT).show()
     }
 
 

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/rounded_dialog_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingVertical="16dp"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:layout_width="@dimen/dialog_image_size"
+            android:layout_height="@dimen/dialog_image_size"
+            android:src="@drawable/img_delete_dialog_icon"/>
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Delete user with id : 1873213324"
+            android:textColor="#161616"
+            android:layout_marginTop="24dp"
+            android:textSize="@dimen/large_text_size"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginHorizontal="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:gravity="top"
+                android:maxLines="1"
+                android:hint="@string/hint_password_to_delete"
+                android:textSize="@dimen/medium_text_size"
+                android:textColor="@color/black"
+                android:layout_marginVertical="@dimen/large_spacing"
+                android:layout_marginHorizontal="@dimen/large_spacing"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_delete_user"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            app:cornerRadius="@dimen/xlarge_spacing"
+            android:text="@string/delete_user_button_text"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            app:backgroundTint="@color/color_primary"
+            android:paddingVertical="12dp"
+            android:layout_marginTop="@dimen/large_spacing"
+            android:layout_marginHorizontal="@dimen/large_spacing"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            app:cornerRadius="@dimen/xlarge_spacing"
+            android:text="@string/cancel_button_text"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            app:backgroundTint="@color/color_primary"
+            android:paddingVertical="12dp"
+            android:layout_marginTop="@dimen/small_spacing"
+            android:layout_marginHorizontal="@dimen/large_spacing"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

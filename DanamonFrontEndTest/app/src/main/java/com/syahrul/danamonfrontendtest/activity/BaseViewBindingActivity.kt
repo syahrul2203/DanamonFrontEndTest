@@ -2,7 +2,11 @@ package com.syahrul.danamonfrontendtest.activity
 
 import android.os.Bundle
 import android.view.LayoutInflater
+import androidx.activity.enableEdgeToEdge
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.viewbinding.ViewBinding
+import com.syahrul.danamonfrontendtest.R
 
 abstract class BaseViewBindingActivity<VB: ViewBinding>: BaseActivity() {
 
